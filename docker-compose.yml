@@ -1,0 +1,28 @@
+version: '3'
+
+services: 
+    nextcloud_app:
+        image: nextcloud:apache
+        ports: 
+            - 8080:80
+        env_file: 
+            - ./nextcloud.env
+    nextcloud_db:
+        image: postgres:10.11-alpine
+        ports: 
+            - 5432:5432
+        env_file: 
+            - ./postgresql.env
+        volumes: 
+            - nextcloud-data-db:/var/lib/postgresql/data
+    nextcloud_pgadmin:
+        image: dpage/pgadmin4
+        env_file: 
+            - ./pgadmin.env
+        ports: 
+            - 88:80
+        volumes: 
+            - nextcloud-data-files:/var/www/html/data
+volumes: 
+    nextcloud-data-db:
+    nextcloud-data-files:
