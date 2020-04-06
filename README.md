@@ -1,6 +1,6 @@
 # NEXTCLOUD
 
-This project is to running in mode develop.
+This project is to run in mode develop.
 
 To producction you need to create all necessaries configurations.
 
