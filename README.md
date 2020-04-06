@@ -1,5 +1,9 @@
 # NEXTCLOUD
 
+This project is to running in mode develop.
+
+To producction you need to create all necessaries configurations.
+
 ## How to run this project?
 
 To run this project inmmediatly, you only need to do the next steps:
@@ -34,3 +38,9 @@ To run this project inmmediatly, you only need to do the next steps:
     ```bash
     $ docker-compose up
     ```
+
+---
+
+## References
+
+* [Docker official image of nextcloud](https://hub.docker.com/_/nextcloud/)
